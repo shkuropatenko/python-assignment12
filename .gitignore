@@ -1,0 +1,13 @@
+.idea
++.DS_Store*
+.pytest_cache
+__pycache__/
+*.rb
+.vscode
+CACHEDIR.TAG
+.venv/
+.history
+example.txt
+example.csv
+TEST.ipynb
+.history
