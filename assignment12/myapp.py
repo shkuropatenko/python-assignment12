@@ -1,8 +1,7 @@
-# Task 4: Dash dashboard (Gapminder GDP per Capita)
+# Tasл 5
 
 from __future__ import annotations
 
-import dash
 from dash import Dash, dcc, html
 from dash.dependencies import Input, Output
 import plotly.express as px
@@ -13,9 +12,7 @@ countries = df["country"].drop_duplicates().sort_values()
 dropdown_options = [{"label": c, "value": c} for c in countries]
 
 app = Dash(__name__)
-server = app.server
-
-app = dash.Dash(__name__)
+server = app.server  # for Render: gunicorn myapp:server
 
 app.layout = html.Div(
   [
@@ -37,7 +34,6 @@ app.layout = html.Div(
 )
 def update_graph(country_name: str):
   filtered = df[df["country"] == country_name]
-
   fig = px.line(
     filtered,
     x="year",
@@ -48,4 +44,4 @@ def update_graph(country_name: str):
   return fig
 
 if __name__ == "__main__":
-  app.run_server(debug=True)
+   app.run_server(debug=True)
