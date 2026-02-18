@@ -3,15 +3,17 @@
 from __future__ import annotations
 
 import dash
-from dash import dcc, html
+from dash import Dash, dcc, html
 from dash.dependencies import Input, Output
 import plotly.express as px
 
 df = px.data.gapminder()
 
 countries = df["country"].drop_duplicates().sort_values()
-
 dropdown_options = [{"label": c, "value": c} for c in countries]
+
+app = Dash(__name__)
+server = app.server
 
 app = dash.Dash(__name__)
 
