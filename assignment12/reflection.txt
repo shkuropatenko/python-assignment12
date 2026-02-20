@@ -1,0 +1,7 @@
+Reflection – Lesson 12
+
+Static visualizations are fixed and do not allow user interaction. They are useful for reports, presentations, and simple comparisons where the goal is to communicate one clear message. Interactive visualizations, on the other hand, allow users to explore the data by zooming, filtering, hovering for details, and selecting different categories. This makes them more flexible and better suited for exploratory analysis or dynamic reporting
+
+Dashboards provide significant advantages for real-time data exploration. They allow multiple visual components to be displayed together, often with filters or controls that update the data instantly. This enables users to monitor trends, detect anomalies, and compare metrics without rerunning queries or rebuilding charts. Dashboards reduce friction between raw data and decision-making.
+
+Interactive tools like Plotly and Dash improve data communication in professional settings by making insights accessible to both technical and non-technical stakeholders. Instead of sending static charts, analysts can provide interactive applications where users can explore specific countries, time ranges, or categories themselves. This increases transparency, engagement, and trust in the data, while also reducing repeated requests for customized reports.
